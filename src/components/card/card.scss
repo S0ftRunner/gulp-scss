@@ -1,0 +1,18 @@
+.card {
+    min-inline-size: 300px;
+    box-shadow: 0 0 4px black;
+    border-radius: 4px;
+
+    &__image { // данная конструкция позволяет нам делать вложенность элементов
+        inline-size: 100%;
+        aspect-ratio: 16 / 9; // aspect-ratio задает отношение сторон
+        object-fit: cover; // данное свойство управляет тем, как картинка или видео будут подстраиваться под размеры контейнера
+        object-position: center;
+    }
+
+    &__content {
+        padding: 20px;
+        font-size: 24px;
+        
+    }
+}

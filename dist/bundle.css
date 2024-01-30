@@ -33,3 +33,82 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.list li {
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.list li a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+.list li a:hover {
+  color: tomato;
+}
+
+.card {
+  min-inline-size: 300px;
+  -webkit-box-shadow: 0 0 4px black;
+          box-shadow: 0 0 4px black;
+  border-radius: 4px;
+}
+
+.card__image {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card__content {
+  padding: 20px;
+  font-size: 24px;
+}
+
+.content-section_type_centered {
+  min-block-size: 600px;
+  min-inline-size: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.tooltip {
+  padding: 20px 40px;
+  max-inline-size: 600px;
+  border-radius: 8px;
+  border: 1px solid black;
+  color: black;
+}
+
+.tooltip_type_success {
+  background-color: green;
+  color: white;
+}
+
+.tooltip_type_error {
+  background-color: red;
+  color: white;
+}
